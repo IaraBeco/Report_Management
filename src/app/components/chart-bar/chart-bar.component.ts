@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-chart-bar',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chart-bar.component.css']
 })
 export class ChartBarComponent implements OnInit {
+
+  @ViewChild('canvas', { static: true })
+  canvas: any;//ElementRef<HTMLCanvasElement>;
 
   public barChartOptions = {
     scaleShowVerticalLines: false,
@@ -21,7 +24,7 @@ export class ChartBarComponent implements OnInit {
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

@@ -9,6 +9,7 @@ import { ExpenseChartComponent } from './components/expense-chart/expense-chart.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ChartPieComponent } from './components/chart-pie/chart-pie.component';
 import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
