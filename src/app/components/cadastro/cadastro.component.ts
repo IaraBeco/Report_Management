@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title
+    ){
+      this.title.setTitle('Cadastro');
+    }
+
+  onSave(){
+    alert('Termos e Condições')
+  }
 
   ngOnInit(): void {
   }

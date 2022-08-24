@@ -5,16 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ExpenseChartComponent } from './components/expense-chart/expense-chart.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ChartPieComponent } from './components/chart-pie/chart-pie.component';
+import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ExpenseChartComponent,
+    DashboardComponent,
+    ChartPieComponent,
+    ChartBarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
