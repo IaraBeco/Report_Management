@@ -1,1 +1,110 @@
-<p>cadastro works!</p>
+<div class="container-fluid">
+  <header id="page-header">
+    <div class="container text-center mt-3">
+      <div id="page-header-content" class="">
+        <h1>REPORT MANAGEMENT</h1>
+        <hr class="divider" />
+        <h2>Soluções de gerenciamento!</h2>
+      </div>
+    </div>
+  </header>
+  <form>
+    <div class="row mt-md-5">
+      <div class="col-md-1"></div>
+      <div class="col-md-5 mb-3">
+        <label for="">Nome</label>
+        <input type="text" class="form-control text-capitalize" required />
+      </div>
+      <div class="col-md-5 mb-3">
+        <label for="">Sobrenome</label>
+        <input type="text" class="form-control text-capitalize" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <label for="">Email</label>
+        <input type="email" class="form-control" required />
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="">Cidade</label>
+        <input type="text" class="form-control" required />
+      </div>
+      <div class="col-md-3 mb-3">
+        <label>Estado</label>
+        <select class="custom-select form-control" required>
+          <option selected disabled value="">
+            <i class="bi bi-caret-down-fill"></i>
+          </option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-2s">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <label for="">Defina uma senha</label>
+        <input type="password" class="form-control" required />
+      </div>
+      <div class="col-md-4">
+        <label for="">Repita a senha</label>
+        <input type="password" class="form-control" required />
+      </div>
+      <div class="col-md-2">
+        <label for="">CEP</label>
+        <input type="text" class="form-control" required />
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <button class="btn btn-success col-md-12" type="submit">
+          Cadastrar <i class="bi bi-box-arrow-in-right"></i>
+        </button>
+      </div>
+
+      <div class="form-group col-md-5 pt-2">
+        <div class="form-check">
+          <input
+            (click)="onSave()"
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />
+          <label class="form-check-label">
+            <a> *Agree to terms and conditions</a>
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
