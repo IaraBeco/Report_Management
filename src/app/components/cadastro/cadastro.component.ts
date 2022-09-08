@@ -14,7 +14,7 @@ export class CadastroComponent implements OnInit {
       this.title.setTitle('Cadastro');
     }
 
-  onSave(){
+  termos(){
     alert('Termos e Condições')
   }
 
