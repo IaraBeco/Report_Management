@@ -11,6 +11,7 @@ import { ChartPieComponent } from './components/chart-pie/chart-pie.component';
 import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
 import { NgChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './componets/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ExpenseChartComponent,
     DashboardComponent,
     ChartPieComponent,
-    ChartBarComponent
+    ChartBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
