@@ -11,6 +11,15 @@ import { ChartPieComponent } from './components/chart-pie/chart-pie.component';
 import { ChartBarComponent } from './components/chart-bar/chart-bar.component';
 import { NgChartsModule } from 'ng2-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './components/footer/footer.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from './components/header/header.component';
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component'; 
+import { MatPaginatorModule } from '@angular/material/paginator'; 
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -20,13 +29,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ExpenseChartComponent,
     DashboardComponent,
     ChartPieComponent,
-    ChartBarComponent
+    ChartBarComponent,
+    FooterComponent,
+    HeaderComponent,
+    TecnicoListComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgChartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatTableModule
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

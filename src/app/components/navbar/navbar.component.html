@@ -1,3 +1,42 @@
+<mat-drawer-container class="" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <img src="img-thumbnail img-fluid w-25" src="../../assets/logo-removebg-preview.png"/>
+   <mat-nav-list class="nav-list" >
+    <a mat-list-item routerLink="home">
+      <i class="material-icons">home</i>      
+       Home
+    </a>
+    <a mat-list-item routerLink="tecnicos">
+      <i class="material-icons">account_circle</i>      
+       Técnicos
+    </a>
+    <a mat-list-item routerLink="/">
+      <i class="material-icons">person</i>      
+       Clientes
+    </a>
+    <a mat-list-item routerLink="/">
+      <i class="material-icons">code</i>      
+       Github
+    </a>
+    <a mat-list-item routerLink="/">
+      <i class="material-icons">logout</i>      
+      Logout
+    </a>
+
+   </mat-nav-list> 
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <app-header></app-header>
+    <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
+
+<!-- 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand me-2 " [routerLink]="'/'">
@@ -8,4 +47,4 @@
     <button [routerLink]="'/cadastro'" class="btn btn-success" type="button">Cadastro</button>
     <button [routerLink]="'/login'" class="btn btn-outline-success mx-2" type="button">Login</button>
   </div>
-</nav>
+</nav> -->
